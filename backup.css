@@ -1,0 +1,349 @@
+.hidden {display: none}
+
+
+html {scroll-behavior:smooth;}
+
+body {
+  margin: 0;
+  min-width: 960px;
+  line-height: 32px;
+  background-color: white;
+  width: auto;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+}
+.sec {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+}
+/* Навигация */
+.main-menu  {
+  margin-left: 30px;
+  width: 350px;
+  color: white;
+  text-align: left;
+  font-size: 120%;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 1;
+}
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 14px;
+  transition: all 0.2s ease-in-out;
+}
+/* .Навигация */
+.firstpage .main-menu a:hover {
+  opacity: .5
+}
+/* Синий цвет для ссылок */
+ .main a, .footer a,.comm .mail a{
+  color: #149bd5;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+/* .Синий цвет для ссылок */
+/* Изменение при наведении */
+ .main a:hover, .footer a:hover, .mail a:hover {
+  color: #127dc3;
+}
+ .main-menu a:hover {
+  opacity: .5
+  color: white;
+}
+/* .Изменение при наведении */
+/* Первая секция с фото */
+.firstpage {
+  background: url("img/woman.jpg") no-repeat -50% 50%;
+  background-size: 80% 100.1%;
+  height: 140%;
+  margin-bottom: 0.1%;
+  box-shadow: inset 0 10px 60px -15px
+
+}
+
+.present {
+  width: auto;
+  height: auto;
+  margin-left: 62%;
+  text-align: center;
+  background-color: white;
+  margin-top: -9%;
+  padding-top: 4.5%;
+  box-shadow: inset 5px 5px 15px -5px
+}
+
+.present h1 {
+height: 25%;
+margin-bottom: -1%;
+text-align: center;
+  color: #FFA07A;
+  font-weight: bold;
+  font-size: 4.7vmax;
+  line-height: 100%;
+}
+
+
+.present .main {
+  margin-left: 17%;
+    text-align: center;
+
+}
+
+.present .main .top {
+  margin-bottom: -3%;
+}
+
+/* Главный текст на 1 стр */
+.present .main p{
+  font-size: 1.5vmax;
+  width: 79%;
+  color: #525050;
+  text-align: center;
+}
+/* Кнопка купить */
+.present .buy {
+  background-color: #777777;
+  color: white;
+  font-size: 125%;
+  border:none;
+  border-radius: 5%;
+  width: 120px;
+  height: 35px;
+  font-weight: 500;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+.present a{}
+.present a:hover .buy {background-color: #919c92;   transition: all 0.2s ease-in-out;}
+.present a:active .buy {transition: 0s;transform: translateY(1px);}
+/* Стрелка вниз*/
+.present img.strelka {
+  margin-top: 5.5%;
+}
+
+/* .Первая секция с фото */
+.below{display: flex;flex-direction: column;}
+/* Натсройки для секций с информацией */
+.sec1:not(.shop){padding-bottom: 6%;border-bottom: 3px solid #e6e5e5;}
+.sec1 .title{margin-top: -2.5%}
+.sec1 .title, .sec1 .title .to,.sec1 .title .second {color: #888888}
+.sec1 .main{text-align: left; width: 60%; position: relative;}
+.sec1 .main .text {line-height: 150%;}
+.sec1 .print-doc{width: 120px; height: 35px;box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  text-align:center; color:black; font-weight: bolder;display: flex;transition: all 0.5s;
+justify-content: center; align-items: center;}
+  .sec1 .print-doc:hover{color:black; background-color: #f2f2f2}
+  .sec1 .pech{position: absolute;left:0; bottom: -60px;}
+#aaa {color: #888888}
+.sec1 .pech:active{bottom: -61px;}
+.sec1 .main .no-color:hover{color:black}
+/* .Натсройки для секций с информацией */
+/* Витрина */
+.shop{border-bottom: 3px solid #e6e5e5;}
+.pilki {width: 60%; display: flex;flex-direction: row;flex-wrap: wrap; justify-content:
+  space-between; padding: 2.5%;
+}
+
+.a {display: block; transition: all 0.2s ease-in-out;}
+.a:hover p{
+  color: #149bd5;
+    transition: all 0.2s ease-in-out;
+}
+.a:hover .jpg {
+  background-size: 110%;
+  transition: all 0.2s ease-in-out;
+}
+.jpg {height: 250px; width:250px; background-color: #f9f9f9;transition: all 0.2s ease-in-out}
+.a p{width: 250px;; line-height: 120%;margin-bottom: -6.5%; color: #575757}
+.a h2 {margin-bottom: 15%;}
+.matreshka .jpg{background: url("img/matreshka.jpg") no-repeat 30% 40%; background-size: 100%;}
+.plastic .jpg{background: url("img/plastic.jpg") no-repeat 40% 60%; background-size: 100%;}
+.moscow .jpg,.bogem .jpg{background: url("img/moscow.jpg") no-repeat 50% 0%; background-size: 100%;
+background-color: #f9f9f9}
+/* .Витрина */
+/* Настройки для галерей пилок */
+.pilka{border-bottom: 3px solid #e6e5e5;}
+.pilka .main {width: 60%;margin: 2% auto 7% auto;
+  justify-content: space-between;;display: flex; align-items: flex-start;}
+  .pilka .gallery .full{position: relative;width:50vmax;margin-bottom: 1%;max-height: 50vmax;overflow:hidden;}
+.pilka .gallery .full-photo{width:100%;max-height: 51vmax;}
+.pilka .gallery .full .leftt{transform: translate(-200.2%,-101.1%)}
+.pilka .gallery .focus{outline: 2px solid black}
+.pilka .gallery .thumbnail {height:7vmax;transition: all 0.2s ease-in-out}
+.pilka .gallery .thumbnail:hover{transform: scale(1.05);filter:  opacity(0.6) }
+.pilka .gallery {display: flex;justify-content: center; flex-wrap: wrap;
+  height:100%;width: 64.48%; align-content: flex-start;}
+  .pilka .gallery .thumbnail:not(.no){margin-left: 10px}
+  .pilka .text{align-self: flex-start;text-align: left;padding-left: 3%}
+  .pilka .text h1{margin-bottom: 0;font-size: 170%;margin-top: 0}
+  .pilka .text p{line-height: 150%; font-size: 16px;font-weight: 600;color: #343434;max-width: 19vmax}
+  .pilka .text .maintext{
+    background: linear-gradient(#343434 45%, transparent );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;height: 9vmax;overflow: hidden;margin-bottom: 0}
+  .pilka .pokaz{margin-top: 0}
+  .pilka .text p:last-of-type{margin-bottom: -0.5%;margin-top: 0}
+  .pilka .text .to{color: #575757}
+  .pilka .text .to:hover{color: #149bd5;}
+  .pilka .text h2 {margin-top: 15%}
+  .pilka .text .button-basket a{color: white; background-color: #343434;
+  width: 90%;border-radius: 2%;height: 50px; display: flex; justify-content: center;align-items: center;margin-top: 0;}
+  .pilka .text .button-basket p{color: white;;font-size: 120%; margin: auto;transition: 0s}
+  .pilka .text .button-basket a:hover{background-color: #5a5a5a; transform: scale(1.01);}
+/* .Настройки для галерей пилок */
+/* Почему мы */
+/* .why{box-shadow: inset 0 10px 10px -15px}*/
+.why h1,.aboutshop h1 {
+  font-size: 2em;
+}
+
+.why p.description {
+  width: 40%;
+  margin-left: 30%;
+  text-align: left;
+  line-height: 180%;
+}
+
+.why .kav {
+  margin-top: 2.5%;
+}
+
+.why .rev {
+  margin-top: -1.5%;
+  text-align: left;
+  width: 40%;
+  font-size: 190%;
+  font-style: italic;
+  line-height: 120%;
+}
+
+.why .figmar {
+ display: inline-block;
+ margin-top: 0;
+ margin-left: 0%;
+ }
+.why .figmar figcaption {
+  float: right;
+  padding-top: 3%;
+}
+
+
+.why .figmar pre{
+ line-height: 150%;
+ font-size: 55%;
+ font-style:  normal;
+}
+/* .Почему мы */
+/* О компании */
+.about {
+  margin-top: 0;
+  padding-bottom: 0.05%;
+}
+
+.about h1 {
+  font-size: 180%;
+}
+
+.about {
+    height: -20%;
+}
+.host{display: flex; justify-content: space-between; width: 40%}
+
+.host .text{
+  text-align: left;
+  line-height: 180%;
+}
+
+.host img {
+  margin-bottom: -1%;
+
+}
+
+.host figure {
+    line-height: 180%;
+align-self: center;
+}
+
+
+/* Контакты */
+.comm {
+padding-bottom: 3%;
+}
+
+.comm h1 {font-size: 180%
+}
+
+.sec.comm .ico.phone a:hover {
+    color: #195685;
+    }
+.icons {display: flex; justify-content: space-between; width: 400px;}
+
+.ico {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.ico.phone {
+  font-size: 100%;
+  width: 37%;
+
+}
+.ico.phone:hover .ic.ph{transform: scale(1.1);}
+.ico.mail:hover .ic.ma{transform: scale(1.1);}
+
+.ico.phone a {
+  color:black;
+  text-decoration: none;
+}
+
+.ico.phone a:hover {
+  color: #195685;
+  transition: all 0.2s ease-in-out;
+}
+
+.ico.mail {
+  font-size: 100%;
+  width: 57%;
+}
+
+.ic {
+ width: 20px;
+ height: 20px;
+background-size: 1000%;
+ background-image: url("img/sprite.jpg");
+ background-repeat: no-repeat;
+
+}
+
+
+.ic.ph {
+  background-position: -90px -75px;
+  transition: all 0.3s
+}
+.ic.ma {
+  background-position: -125px -75px;
+  transition: all 0.3s
+}
+/* .Контакты */
+/* .О компании */
+#footer {
+  background: #efefef;
+  padding-top: 1%;
+  font-size: 90%;
+  line-height: 50%;
+  padding-bottom: 1%;
+  color: #9f9b9a;
+  }
+
+@media print {
+.firstpage,.sec:not(.sec1),.sec1 .title,.sec1 a,.sec1 p:not(.print),.sec1 .main .print-doc{
+display:none;
+}
+.sec1 .print{width: 100%}
+.sec1 {border:none!important}
+.sec1 h1{margin-bottom: -2%;font-size: 250%}
+.sec1 .main{position: absolute; top:0; left: 0;width: 100%}
+}

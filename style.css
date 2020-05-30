@@ -1,0 +1,621 @@
+/* line 1, style.less */
+.hidden {
+  display: none;
+}
+/* line 4, style.less */
+html {
+  scroll-behavior: smooth;
+}
+/* line 6, style.less */
+body {
+  margin: 0;
+  min-width: 960px;
+  line-height: 32px;
+  background-color: white;
+  width: auto;
+  height: auto;
+  transition: all 0.2s ease-in-out;
+}
+/* line 15, style.less */
+.sec {
+  text-align: center;
+  background-color: white;
+  width: 100%;
+}
+/* Навигация */
+/* line 21, style.less */
+.main-menu {
+  margin-left: 30px;
+  width: 350px;
+  color: white;
+  text-align: left;
+  font-size: 120%;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 1;
+}
+/* line 30, style.less */
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 14px;
+  transition: all 0.2s ease-in-out;
+}
+/* .Навигация */
+/* line 40, style.less */
+.firstpage .main-menu a:hover {
+  opacity: 0.5;
+}
+/* Синий цвет для ссылок */
+/* line 44, style.less */
+.main a,
+.footer a,
+.comm .mail a {
+  color: #149bd5;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+/* .Синий цвет для ссылок */
+/* Изменение при наведении */
+/* line 52, style.less */
+.main a:hover,
+.footer a:hover,
+.mail a:hover {
+  color: #127dc3;
+}
+/* line 55, style.less */
+.main-menu a:hover {
+  opacity: .5
+  color: white;
+}
+/* .Изменение при наведении */
+/* Первая секция с фото */
+/* line 61, style.less */
+.firstpage {
+  background: url("img/woman.jpg") no-repeat -50% 50%;
+  background-size: 80% 100.1%;
+  height: 140%;
+  margin-bottom: 0.1%;
+  box-shadow: inset 0 10px 60px -15px;
+  filter: saturate(1.1);
+}
+/* line 70, style.less */
+.present {
+  width: auto;
+  height: auto;
+  margin-left: 62%;
+  text-align: center;
+  background-color: white;
+  margin-top: -9%;
+  padding-top: 4.5%;
+  box-shadow: inset 5px 5px 15px -5px;
+}
+/* line 80, style.less */
+.present h1 {
+  height: 25%;
+  margin-bottom: -1%;
+  text-align: center;
+  color: #FFA07A;
+  font-weight: bold;
+  font-size: 4.7vmax;
+  line-height: 100%;
+}
+/* line 89, style.less */
+.present .main {
+  margin-left: 17%;
+  text-align: center;
+}
+/* line 92, style.less */
+.present .main .top {
+  margin-bottom: -3%;
+}
+/* line 95, style.less */
+.present .main p {
+  font-size: 1.5vmax;
+  width: 79%;
+  color: #525050;
+  text-align: center;
+}
+/* line 102, style.less */
+.present .buy {
+  background-color: #777777;
+  color: white;
+  font-size: 125%;
+  border: none;
+  border-radius: 5%;
+  width: 120px;
+  height: 35px;
+  font-weight: 500;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+/* line 115, style.less */
+.present a:hover .buy {
+  background-color: #919c92;
+  transition: all 0.2s ease-in-out;
+}
+/* line 116, style.less */
+.present a:active .buy {
+  transition: 0s;
+  transform: translateY(1px);
+}
+/* line 118, style.less */
+.present img.strelka {
+  margin-top: 5.5%;
+}
+/* line 123, style.less */
+.below {
+  display: flex;
+  flex-direction: column;
+}
+/* Натсройки для секций с информацией */
+/* line 125, style.less */
+.sec1:not(.shop) {
+  padding-bottom: 6%;
+  border-bottom: 3px solid #e6e5e5;
+}
+/* line 127, style.less */
+.sec1 .title {
+  margin-top: -2.5%;
+}
+/* line 128, style.less */
+.sec1 .main {
+  text-align: left;
+  width: 60%;
+  position: relative;
+}
+/* line 129, style.less */
+.sec1 .main .text {
+  line-height: 150%;
+}
+/* line 130, style.less */
+.sec1 .main .no-color:hover {
+  color: #000000;
+}
+/* line 132, style.less */
+.sec1 .print-doc {
+  width: 120px;
+  height: 35px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+/* line 136, style.less */
+.sec1 .print-doc:hover {
+  color: black;
+  background-color: #f2f2f2;
+}
+/* line 138, style.less */
+.sec1 .pech {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+}
+/* line 139, style.less */
+.sec1 .pech:active {
+  transform: translateY(1px);
+}
+/* line 142, style.less */
+.sec1 .title,
+.sec1 .title .to,
+.sec1 .title .second {
+  color: #888888;
+}
+/* line 145, style.less */
+#aaa {
+  color: #888888;
+}
+/* .Натсройки для секций с информацией */
+/* Витрина */
+/* line 150, style.less */
+.shop {
+  border-bottom: 3px solid #e6e5e5;
+}
+/* line 151, style.less */
+.pilki {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2.5%;
+}
+/* line 155, style.less */
+.a {
+  display: block;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+/* line 156, style.less */
+.a:hover p {
+  color: #149bd5;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes opaci {
+  /* line 160, style.less */
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  /* line 161, style.less */
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* line 163, style.less */
+.opaci {
+  animation: opaci 0.5s ease-out forwards;
+}
+/* line 164, style.less */
+.a:hover .jpg {
+  background-size: 110%;
+  transition: all 0.2s ease-in-out;
+}
+/* line 168, style.less */
+.jpg {
+  height: 250px;
+  width: 250px;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease-in-out;
+}
+/* line 169, style.less */
+.a p {
+  width: 250px;
+  line-height: 120%;
+  margin-bottom: -6.5%;
+  color: #575757;
+}
+/* line 170, style.less */
+.a h2 {
+  margin-bottom: 15%;
+}
+/* line 171, style.less */
+.matreshka .jpg {
+  background: url("img/matreshka.jpg") no-repeat 30% 40%;
+  background-size: 100%;
+}
+/* line 172, style.less */
+.plastic .jpg {
+  background: url("img/plastic.jpg") no-repeat 40% 60%;
+  background-size: 100%;
+}
+/* line 173, style.less */
+.moscow .jpg,
+.bogem .jpg {
+  background: url("img/moscow.jpg") no-repeat 50% 0%;
+  background-size: 100%;
+  background-color: #f9f9f9;
+}
+/* .Витрина */
+/* Настройки для галерей пилок */
+/* line 177, style.less */
+.pilka {
+  border-bottom: 3px solid #e6e5e5;
+}
+/* line 178, style.less */
+.pilka .main {
+  width: 60%;
+  margin: 2% auto 7% auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+/* line 180, style.less */
+.pilka .gallery .full {
+  position: relative;
+  width: 50vmax;
+  margin-bottom: 1%;
+  max-height: 50vmax;
+  overflow: hidden;
+}
+/* line 181, style.less */
+.pilka .gallery .full-photo {
+  width: 100%;
+  max-height: 51vmax;
+}
+/* line 182, style.less */
+.pilka .gallery .full .leftt {
+  transform: translate(-200.2%, -101.1%);
+}
+/* line 183, style.less */
+.pilka .gallery .focus {
+  outline: 2px solid #000000;
+}
+/* line 184, style.less */
+.pilka .gallery .thumbnail {
+  height: 7vmax;
+  transition: all 0.2s ease-in-out;
+}
+/* line 185, style.less */
+.pilka .gallery .thumbnail:hover {
+  transform: scale(1.05);
+  filter: opacity(0.6);
+}
+/* line 186, style.less */
+.pilka .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 64.48%;
+  align-content: flex-start;
+}
+/* line 188, style.less */
+.pilka .gallery .thumbnail:not(.no) {
+  margin-left: 10px;
+}
+/* line 189, style.less */
+.pilka .text {
+  align-self: flex-start;
+  text-align: left;
+  padding-left: 3%;
+}
+/* line 190, style.less */
+.pilka .text h1 {
+  margin-bottom: 0;
+  font-size: 170%;
+  margin-top: 0;
+}
+/* line 191, style.less */
+.pilka .text p {
+  line-height: 150%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #343434;
+  max-width: 19vmax;
+}
+/* line 192, style.less */
+.pilka .text .maintext {
+  background: linear-gradient(#343434 45%, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 9vmax;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+/* line 196, style.less */
+.pilka .pokaz {
+  margin-top: 0;
+}
+/* line 197, style.less */
+.pilka .text p:last-of-type {
+  margin-bottom: -0.5%;
+  margin-top: 0;
+}
+/* line 198, style.less */
+.pilka .text .to {
+  color: #575757;
+}
+/* line 199, style.less */
+.pilka .text .to:hover {
+  color: #149bd5;
+}
+/* line 200, style.less */
+.pilka .text h2 {
+  margin-top: 15%;
+}
+/* line 201, style.less */
+.pilka .text .button-basket a {
+  color: white;
+  background-color: #343434;
+  width: 90%;
+  border-radius: 2%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+/* line 203, style.less */
+.pilka .text .button-basket p {
+  color: white;
+  font-size: 120%;
+  margin: auto;
+  transition: 0s;
+}
+/* line 204, style.less */
+.pilka .text .button-basket a:hover {
+  background-color: #5a5a5a;
+  transform: scale(1.01);
+}
+/* .Настройки для галерей пилок */
+/* Почему мы */
+/* .why{box-shadow: inset 0 10px 10px -15px}*/
+/* line 208, style.less */
+.why h1,
+.aboutshop h1 {
+  font-size: 2em;
+}
+/* line 212, style.less */
+.why p.description {
+  width: 40%;
+  margin-left: 30%;
+  text-align: left;
+  line-height: 180%;
+}
+/* line 219, style.less */
+.why .kav {
+  margin-top: 2.5%;
+}
+/* line 223, style.less */
+.why .rev {
+  margin-top: -1.5%;
+  text-align: left;
+  width: 40%;
+  font-size: 190%;
+  font-style: italic;
+  line-height: 120%;
+}
+/* line 232, style.less */
+.why .figmar {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0%;
+}
+/* line 237, style.less */
+.why .figmar figcaption {
+  float: right;
+  padding-top: 3%;
+}
+/* line 243, style.less */
+.why .figmar pre {
+  line-height: 150%;
+  font-size: 55%;
+  font-style: normal;
+}
+/* .Почему мы */
+/* О компании */
+/* line 250, style.less */
+.about {
+  margin-top: 0;
+  padding-bottom: 0.05%;
+}
+/* line 255, style.less */
+.about h1 {
+  font-size: 180%;
+}
+/* line 259, style.less */
+.about {
+  height: -20%;
+}
+/* line 262, style.less */
+.host {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+/* line 264, style.less */
+.host .text {
+  text-align: left;
+  line-height: 180%;
+}
+/* line 269, style.less */
+.host img {
+  margin-bottom: -1%;
+}
+/* line 274, style.less */
+.host figure {
+  line-height: 180%;
+  align-self: center;
+}
+/* Контакты */
+/* line 281, style.less */
+.comm {
+  padding-bottom: 3%;
+}
+/* line 285, style.less */
+.comm h1 {
+  font-size: 180%;
+}
+/* line 288, style.less */
+.sec.comm .ico.phone a:hover {
+  color: #195685;
+}
+/* line 291, style.less */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+/* line 293, style.less */
+.ico {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 296, style.less */
+.ico.phone {
+  font-size: 100%;
+  width: 37%;
+}
+/* line 301, style.less */
+.ico.phone:hover .ic.ph {
+  transform: scale(1.1);
+}
+/* line 302, style.less */
+.ico.mail:hover .ic.ma {
+  transform: scale(1.1);
+}
+/* line 304, style.less */
+.ico.phone a {
+  color: black;
+  text-decoration: none;
+}
+/* line 309, style.less */
+.ico.phone a:hover {
+  color: #195685;
+  transition: all 0.2s ease-in-out;
+}
+/* line 314, style.less */
+.ico.mail {
+  font-size: 100%;
+  width: 57%;
+}
+/* line 319, style.less */
+.ic {
+  width: 20px;
+  height: 20px;
+  background-size: 1000%;
+  background-image: url("img/sprite.jpg");
+  background-repeat: no-repeat;
+}
+/* line 329, style.less */
+.ic.ph {
+  background-position: -90px -75px;
+  transition: all 0.3s;
+}
+/* line 333, style.less */
+.ic.ma {
+  background-position: -125px -75px;
+  transition: all 0.3s;
+}
+/* .Контакты */
+/* .О компании */
+/* line 339, style.less */
+#footer {
+  background: #efefef;
+  padding-top: 1%;
+  font-size: 90%;
+  line-height: 50%;
+  padding-bottom: 1%;
+  color: #9f9b9a;
+}
+@media print {
+  /* line 349, style.less */
+  .firstpage,
+  .sec:not(.sec1),
+  .sec1 .title,
+  .sec1 a,
+  .sec1 p:not(.print),
+  .sec1 .main .print-doc {
+    display: none;
+  }
+  /* line 352, style.less */
+  .sec1 .print {
+    width: 100%;
+  }
+  /* line 353, style.less */
+  .sec1 {
+    border: none !important;
+  }
+  /* line 354, style.less */
+  .sec1 h1 {
+    margin-bottom: -2%;
+    font-size: 250%;
+  }
+  /* line 355, style.less */
+  .sec1 .main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
